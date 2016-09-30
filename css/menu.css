@@ -1,0 +1,40 @@
+#nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	height: 100px;
+	padding-left: 15px;
+	line-height: 77px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+#nav li {
+	display: inline-block;
+	background: none;
+	margin: 0 0px;
+	height: 100px;
+	font-size: 17px;
+	font-weight: 100;
+}
+
+#nav li a { 
+	padding: 0; 
+	line-height: 100px; 
+	text-decoration: none;  
+	color: #ffffff; 
+	font-weight: 900;
+	border-color: #d9d9d9;
+	padding: 26px 16px; 
+}
+#nav li a:hover, #nav li a.hov { 
+	background-position:bottom;
+	color: #ffe066; 
+}
+
+#nav ul li { 
+width: 190px; 
+height: 100px;
+float: left; 
+padding-left: 10px;
+padding-top: 3px;
+text-align: left;
+}

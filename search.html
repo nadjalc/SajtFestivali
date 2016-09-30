@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <meta http-equiv="Content-Language" content="sr" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="css/menu.css" rel="stylesheet" type="text/css" media="screen" />
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
+  <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/themes/south-street/jquery-ui.css"> 
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.validate.js"></script>
+  <script type="text/javascript" src="js/jquery.ui.datepicker.validation.js"></script>
+
+  <script>
+  $(function() {
+    $( ".dpDate" ).datepicker();
+  });
+  </script>
+  <script type="text/javascript">
+    $(form).validate({ 
+        rules: { 
+            startDate: { 
+                required: true, 
+                dpDate: true 
+            } 
+        }     
+    });
+  </script>
+
+      <script type="text/javascript">
+        $('#validBeforeDatepicker,#validAfterDatepicker').datepicker();
+      </script>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+$("#dp2").datepicker({
+   onSelect: function() { 
+      
+      var pocetak = $(#dp1).datepicker( 'getDate' );
+      var kraj = $(#dp2).datepicker( 'getDate' );
+      if (dates.compare(pocetak, kraj) == 1) {
+        alert("poruka");
+      };
+   }
+});
+</SCRIPT>
+  </head>
+  <body>
+<div class="pozadina" style="position:responsive; top:0px; left:0px; z-index:-999; width:100%; 
+        overflow-y:hidden; overflow-x:hidden; margin:auto;">
+
+        <!-- WRAPPER START -->
+    <div class="wrapper">
+
+  <!-- HEADER START-->
+      <div id="header">
+        
+          <ul id="nav">
+              <li><a href="index.html">Početna</a></li>
+              <li><a href="about.html">O nama</a></li>
+              <li><a href="contact.html">Kontakt</a></li>
+              <li><a href="index.html">Pretraga</a></li>
+
+              <li><a href="https://www.facebook.com/groups/160848507599965/"><img src="images/fb.gif" style="height: 50px; width: 50px; vertical-align: middle; margin-left: 340px;" title="Facebook stranica"></a></li>
+              <li><a href="https://twitter.com/elab_fon"><img src="images/twitter.gif" style="height: 50px; width: 50px; vertical-align: middle;" title="Twitter nalog"></a></li>
+            </ul>
+      </div>
+
+
+  <!-- HEADER END-->
+
+
+        <div id="search" style="margin-left: 20px;">
+          <form name="searchform" action="" method="get">
+             <h2>Pretraga festivala</h2>
+             <h5>Država (moguće je odabrati više država)</h5>      
+            <select multiple id="Country">
+            <option value="Srbija">Srbija</option>
+            <option value="Nemačka">Nemačka</option>
+            <option value="Belgija">Belgija</option>
+            <option value="Velika Britanija">Velika Britanija</option>
+            </select>
+            <h5>Žanr (moguće je odabrati više žanrova)</h5>      
+            <select multiple id="Genre">
+            <option value="Heavy Metal">Heavy Metal</option>
+            <option value="Rock n' Roll">Rock n' Roll</option>
+            <option value="Alternative">Alternative</option>
+            <option value="Hard Rock">Hard Rock</option>
+            <option value="Classical">Classical</option>
+            <option value="Punk Rock">Punk Rock</option>
+            <option value="Rap">Rap</option>
+            <option value="Blues">Blues</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Pop">Pop</option>
+            </select>
+            <h5>Vremenski interval</h5>
+            <p>Od: <input type="text" id="dp1" class="dpDate">
+            Do: <input type="text" id="dp2" class="dpDate"></p>
+            <input type="submit" value="Pretraži festivale" style="margin-bottom: 20px; margin-right:10px;">
+            <input type="reset" value="Resetuj" style="margin-bottom: 20px;">        
+        </form>
+    </div>
+
+<!-- FOOTER START-->
+      <footer>
+        <div>
+          <p>Copyright © 2015 - Designed by EPOS momci</p>
+        </div>  
+      </footer>
+
+  </body>
+</html>
+
+

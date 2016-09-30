@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Dokument */
+html, body
+{
+    overflow: auto;
+}
+.dugmad {
+  margin: 0; padding: 0; border: 0; list-style: none;
+}
+a {
+	text-decoration: none;
+}
+a:link {
+    
+	text-decoration: none;
+	font-weight: 700;
+	transition: all 0.5s ease;
+}
+a:visited {
+   
+}
+a:hover {
+    
+}
+body {
+	background-image:url('../images/bg.png');
+	background-repeat: repeat;
+	margin: 0 auto;
+	padding: 0 auto;
+  }
+.pozadina {
+    /*background-image:url('../images/bg.jpg') !important;*/
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+ }
+  .wrapper {
+	margin:0 auto;
+	width: 1000px;
+	margin-bottom: 30px;
+	box-shadow: 0 1px 5px #505152;
+	-webkit-box-shadow: 0 2px 10px #505152;
+  -moz-box-shadow: 0 2px 10px #505152;
+  background-color: #fff;
+	margin-top: 5px;
+}
+ #header {
+	width: 1000px;
+	height: 100px;
+	
+    background-color: #FFCB05;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFCB05), to(#DAA51A));
+    background-image: -webkit-linear-gradient(top, #FFCB05, #DAA51A);
+    background-image: -moz-linear-gradient(top, #FFCB05, #DAA51A);
+    background-image: -ms-linear-gradient(top, #FFCB05, #DAA51A);
+    background-image: -o-linear-gradient(top, #FFCB05, #DAA51A);
+    background-image: linear-gradient(top, #FFCB05, #DAA51A);  
+
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    text-align: left;
+    vertical-align: middle;
+}
+footer{
+	padding-top: 5px;
+	width: 1000px;
+	height: 100px;
+	padding-top: 20px;
+	text-align: center;
+	color: #636b72;
+  font-family: 'Source Sans Pro', sans-serif;
+
+	background-color: #FFCB05;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFCB05), to(#DAA51A));
+  background-image: -webkit-linear-gradient(top, #DAA51A, #9f7913);
+  background-image: -moz-linear-gradient(top, #DAA51A, #9f7913);
+  background-image: -ms-linear-gradient(top, #DAA51A, #9f7913);
+  background-image: -o-linear-gradient(top, #DAA51A, #9f7913);
+	background-image: linear-gradient(top, #DAA51A, #9f7913);
+}
+.label {
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+.contact-form {
+  color: #262626;
+  padding: 5px 27px 5px 10px;
+  width: 250px;
+  outline: none;
+  border: 5px solid #DAA51A;
+  height: 20px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  background-repeat: repeat;
+}
+.contact-form-big {
+  background-repeat: repeat;
+  color: #262626;
+  padding: 5px 27px 5px 10px;
+  width: 250px;
+  outline: none;
+  border: 5px solid #DAA51A;
+  margin-left: 10px;
+  height: 140px;
+}
+.dugme2{
+  padding: 5px;
+	width: 190px;
+	height: 80px;
+	display: block;
+	cursor: pointer;
+}
